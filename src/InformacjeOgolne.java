@@ -7,6 +7,10 @@ public class InformacjeOgolne {
     Alt+1 widok projektu (listy po lewej stronie)
     psvm + enter – public static void main
     sout + enter - System.out.println();
+    ctr + tab - przechodzenie pomiędzy otwartymi zakładkami klas
+    przytrzymanie ctrl + najechanie na naszą(!) metodę + kliknięcie - przenosi nas automatycznie do tej metody i kodu kryjącego się pod nią
+
+
 
     Komentarze:
 
@@ -21,6 +25,10 @@ public class InformacjeOgolne {
 
     Pojęcia:
 
+    Klasa jest pewnego rodzaju szablonem, na podstawie którego można tworzyć obiekty
+    Opis klasy na przykładach jest dostępny w klasie Auto, AutoTest oraz Student
+
+
     Src (source) – miejsce, folder, w którym trzymany jest kod źródłowy
 
     Zmienne to zarezerwowane miejsce w pamięci z określonym typem danych
@@ -31,6 +39,12 @@ public class InformacjeOgolne {
 
     Typy obiektowe przechowują aktualną wartość oraz umożliwiają wykonanie akcji (wywołanie metod) na tych danych
     Typy obiektowe pisane są wielką literą; wyświetlają się też w innym kolorze niż typy proste
+
+    Debugowanie - sprawdzanie działania programu, kodu krok po kroku, sprawdzanie jakie wartości przypisane są do zmiennych w danym momencie
+    Aby sprawdzić program w konkretnym miejscu, musimy dodać breakpoint; breakpoint to miejsce w którym program zostanie zatrzyamny
+    Aby to zrobić najeżdżamy na odpowiednią linijkę kodu i klikamy obok numeru wiersza (miejsce to oznaczone zostanie czerwoną kropką a wiersz zostanie podświetlony)
+    Następnie musimy uruchomić program, ale w odpowiednim trybie - w trybie debugowania (znaczek robaczka - w górnym panelu obok znaku play)
+
 
 
     Nazewnictwo:
