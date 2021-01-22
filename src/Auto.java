@@ -15,7 +15,9 @@ public class Auto {
     Klasa zawiera w sobie także metody (jedną lub wiele), czyli sposób zachowania naszego obiektu
 
     Ani pola ani metody nie są obowiązkowe
-     */
+    */
+
+
 
     public String marka;
     public String model;

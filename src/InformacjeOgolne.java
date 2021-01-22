@@ -4,12 +4,12 @@ public class InformacjeOgolne {
 
     Skróty w Intellij:
 
-    Alt+1 widok projektu (listy po lewej stronie)
+    alt+1 widok projektu (listy po lewej stronie)
     psvm + enter – public static void main
     sout + enter - System.out.println();
     ctr + tab - przechodzenie pomiędzy otwartymi zakładkami klas
     przytrzymanie ctrl + najechanie na naszą(!) metodę + kliknięcie - przenosi nas automatycznie do tej metody i kodu kryjącego się pod nią
-
+    alt + enter - wyświetlenie podpowiedzi do danego wiersza
 
 
     Komentarze:
@@ -27,6 +27,8 @@ public class InformacjeOgolne {
 
     Klasa jest pewnego rodzaju szablonem, na podstawie którego można tworzyć obiekty
     Opis klasy na przykładach jest dostępny w klasie Auto, AutoTest oraz Student
+
+    Metoda jest to blok który zawiera jakieś instrukcje
 
 
     Src (source) – miejsce, folder, w którym trzymany jest kod źródłowy
