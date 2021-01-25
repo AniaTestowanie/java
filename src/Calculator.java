@@ -3,33 +3,65 @@ import java.util.Scanner;
 public class Calculator {
     /*
     Praca domowa:
-    Napisz program, który poprosi użytkownika o dwie liczby, a następnie wykona na nich podstawowe operacje matematyczne
+    zmieniamy wcześniej stworzoną klasę Calculator w taki sposób, żeby teraz wewnątrz niej zdefiniować same metody, a wywołać je w CalculatorTest
+
+    mamy zdefiniować 5 metod, każda ma zwracać wartość int
      */
 
-    public static void main(String[] args) {
+
+        public void addition() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Proszę podaj pierwszą liczbę: ");
+            int firstNumber = scanner.nextInt();
+            System.out.println("Proszę podaj drugą liczbę: ");
+            int secondNumber = scanner.nextInt();
+            int addResult = firstNumber + secondNumber;
+            System.out.println("Dodawanie: " + firstNumber + " + " + secondNumber + " = " + addResult);
+        }
+
+        public void subtraction() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Proszę podaj pierwszą liczbę: ");
+            int firstNumber = scanner.nextInt();
+            System.out.println("Proszę podaj drugą liczbę: ");
+            int secondNumber = scanner.nextInt();
+            int subtractionResult = firstNumber - secondNumber;
+            System.out.println("Odejmowanie: " + firstNumber + " - " + secondNumber + " = " + subtractionResult);
+        }
+
+
+    public void multiplication() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Proszę podaj pierwszą liczbę: ");
-        float firstNumber = scanner.nextFloat();
+        int firstNumber = scanner.nextInt();
         System.out.println("Proszę podaj drugą liczbę: ");
-        float secondNumber = scanner.nextFloat();
-
-        float addition = firstNumber + secondNumber;
-        float subtraction = firstNumber - secondNumber;
-        float multiplication = firstNumber * secondNumber;
-        float division = firstNumber/secondNumber;
-        float mod = firstNumber%secondNumber;
-
-        System.out.println("Poniżej przedstawiam Ci podstawowe działania na podanych przez Ciebie liczbach");
-        System.out.println("Dodawanie: " + firstNumber + " + " + secondNumber + " = " + addition);
-        System.out.println("Odejmowanie: " + firstNumber + " - " + secondNumber + " = " + subtraction);
-        System.out.println("Mnożenie: " + firstNumber + " * " + secondNumber + " = " + multiplication);
-        System.out.println("Dzielenie: " + firstNumber + " / " + secondNumber + " = " + division);
-        System.out.println("Modulo: " + mod);
-
-
-
+        int secondNumber = scanner.nextInt();
+        int multiplicationResult = firstNumber * secondNumber;
+        System.out.println("Mnożenie: " + firstNumber + " * " + secondNumber + " = " + multiplicationResult);
     }
 
+    public void division() {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Proszę podaj pierwszą liczbę: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Proszę podaj drugą liczbę: ");
+        int secondNumber = scanner.nextInt();
+        int divisionResult = firstNumber / secondNumber;
+        System.out.println("Dzielenie: " + firstNumber + " / " + secondNumber + " = " + divisionResult);
+    }
+
+    public void modulo() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Proszę podaj pierwszą liczbę: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Proszę podaj drugą liczbę: ");
+        int secondNumber = scanner.nextInt();
+        int modResult = firstNumber%secondNumber;
+        System.out.println("Modulo to: " + modResult);
+    }
 }

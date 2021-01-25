@@ -95,4 +95,14 @@ public class Metody {
         // public int add(int firstNumber, ind secondNumber, String word)
         // wówczas podczas wywoływania metody trzeba by było określić trzy parametry - 2 inty i 1 String
     }
+
+
+    /*
+    Teraz powiemy sobie o konstruktorach, czyli specjalnych metodach, które zwracają obiekt danej klasy
+    i które są wywoływane automatycznie podczas tworzenia obiektu.
+    Więcej o konstruktorach i przykłady w klasie User
+     */
+
+
+
 }
