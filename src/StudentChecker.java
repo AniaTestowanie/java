@@ -9,12 +9,25 @@ public class StudentChecker {
 
     public static void main(String[] args) {
 
+        // Poniżej zweryfikujemy pole statyczne, sprawdzimy czy jest współdzielone przez obiekty klasy oraz od nich niezależne
+        // Zweryfikujemy również metodę statyczną
+
+        String uczelnia = Student.nazwaUczelni;
+        Student.infoUczelnia();
+
+        // Jak widać powyżej nie musimy tworzyć nowego obiektu, aby uzyskać wartość tego pola oraz wywołać metodę statyczną
+
         Student osoba1 = new Student();
         osoba1.imie = "Ania";
         osoba1.nazwisko = "Kowalska";
         osoba1.nick = "ania";
         osoba1.email = "ania@mail.com";
         osoba1.numerIndeksu = 894623;
+        String uczelniaOsoby1 = osoba1.nazwaUczelni;
+        osoba1.infoUczelnia();
+
+        // Jak widać powyżej dowolny obiekt klasy ma dostęp do tego pola oraz metody -> pole i metoda są współdzielone
+        // Choć! Ten sposób wywołania metody nie jest rekomendowany (poprawny jest pierwszy zapis: Student.infoUczelnia();
 
         Student osoba2 = new Student();
         osoba2.imie = "Piotr";

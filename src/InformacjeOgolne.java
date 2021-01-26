@@ -30,6 +30,11 @@ public class InformacjeOgolne {
 
     Metoda jest to blok który zawiera jakieś instrukcje
 
+    Dziedziczenie to podstawowy mechanizm programowania obiektowego.
+    Dzięki niemu możemy utworzyć hierarchię klas, która pozwoli nam na przekazanie pewnych cech klasy bazowej klasom potomnym.
+
+    Najłatwiej dziedziczenie będzie przedstawić na przykładzie.
+    Person - będzie to klasa bazowa. MathTeacher i Footballer to klasy potomne.
 
     Src (source) – miejsce, folder, w którym trzymany jest kod źródłowy
 

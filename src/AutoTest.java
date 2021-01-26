@@ -53,5 +53,12 @@ public class AutoTest {
         */
 
 
+        // Poniżej inny sposób przypisywania zmiennych; praca domowa
+
+        Auto fiat = new Auto("Fiat", "Punto", 1999,254000);
+        
+        fiat.info();
+        fiat.jedz();
+        fiat.hamuj();
     }
 }

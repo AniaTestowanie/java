@@ -18,11 +18,14 @@ public class User {
 
     /*
     Gdybyśmy chcieli jednak poznać zapis konstruktora, to wygląda on następująco:
-    metoda ta zwraca typ User, nie ma nazwy, nie mamy tu też zwrotu return.
 
     public User() {
 
     }
+
+    metoda ta zwraca typ User, nie ma nazwy, nie mamy tu też zwrotu return.
+
+    Według konwencji właściwym miejscem, aby zdefiniować konstruktor jest miejsce za polami klasy, a przed metodami!
 
     Aby sprawdzić, czy
     metoda ta faktycznie jest wywoływana, możemy dodać sout z odpowiednim tekstem w celu obserwacji,
@@ -40,12 +43,16 @@ public class User {
     }
 
     ale wówczas pojawi nam się problem, gdyż podczas tworzenia nowego obiektu będziemy musieli przekazać te dwa argumenty.
+    Oczywiście tak może być, o ile właśnie tego oczekujemy.
 
     Jeśli chcemy uniknąć tego problemu, to możemy zadeklarować drugi konstruktor publiczny, ale tym razem jawnie, który nie będzie miał żadnych parametrów
     i będzie wyglądał jak konstruktor domyślny.
 
     -> Jeśli chcemy mieć kilka konstruktorów, to wtedy ten domyślny musi być jawnie zadeklarowany
-    Jeśli go nie będzie, to będziemy mieli błąd - będziemy musieli podać parametry podczas tworzenia obiektu, a jeśli tego nie zrobimy, kod nam nie zadziała
+    Jeśli go nie będzie, to będziemy mieli błąd w przypadku gdy na etapie tworzenia nowego obiektu nie podamy wartości argumentów.
+
+    Jeśli chcemy aby użytkownik musiał podać te wartości i nie dopuszczamy innego sposobu przypisywania zmiennej, wówczas możemy zostawić
+    tylko ten konstruktor z parametrami.
 
     Poniżej przykład:
 

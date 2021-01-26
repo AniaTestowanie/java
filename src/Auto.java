@@ -15,6 +15,11 @@ public class Auto {
     Klasa zawiera w sobie także metody (jedną lub wiele), czyli sposób zachowania naszego obiektu
 
     Ani pola ani metody nie są obowiązkowe
+
+    Praca domowa:
+    należy tak przerobić klasę Auto i AutoTest, aby nie trzeba było za każdym razem przypisywać wartości marka, model, rokProdukcji i przebieg
+    w oddzielnych wierszach, korzystając z konstruktora, przypisując wartości od razu
+
     */
 
 
@@ -23,6 +28,23 @@ public class Auto {
     public String model;
     public int rokProdukcji;
     public int przebieg;
+
+
+    // Poniżej modyfikacja na potrzeby pracy domowej
+
+    public Auto() {
+
+    }
+
+    public Auto(String marka, String model, int rokProdukcji, int przebieg) {
+        this.marka = marka;
+        this.model = model;
+        this.rokProdukcji = rokProdukcji;
+        this.przebieg = przebieg;
+    }
+
+    // zakończenie modyfikacji
+
 
     public void jedz() {
         System.out.println("Jadę!");
