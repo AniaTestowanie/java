@@ -18,9 +18,18 @@ public class Person {
 
     Po lewej stronie wiersza "public class Person {" możemy zobaczyć jakie klasy rozszerzają tą klasę
 
-
-
     */
+
+    /*
+    Nadpisywanie metod
+    Czasem możemy nie chcieć aby metody w klasach potomnych były takie same jak w klasie nadrzędnej, chcemy dokonać modyfikacji
+    W tym celu będziemy nadpisywali metody
+    Dla naszego przykładu załóżmy, że Footballer będzie miał inne zachowanie w obrębie metody eat.
+    W tym celu będziemy musieli nadpisać tę metodę, czyli wewnątrz klasy potomnej Footballer zdefiniować kolejną metodę eat,
+    która przesłoni metodę eat z klasy nadrzędnej
+
+    Po lewej stronie metody nadpisującej i nadpisanej zobaczymy odpowiedni symbol i komentarz Intellij informujący o tym fakcie
+     */
 
     public String name;
     public int age;

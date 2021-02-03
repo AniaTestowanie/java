@@ -1,5 +1,6 @@
 public class InformacjeOgolne {
 
+
     /*
 
     Skróty w Intellij:
@@ -10,6 +11,8 @@ public class InformacjeOgolne {
     ctr + tab - przechodzenie pomiędzy otwartymi zakładkami klas
     przytrzymanie ctrl + najechanie na naszą(!) metodę + kliknięcie - przenosi nas automatycznie do tej metody i kodu kryjącego się pod nią
     alt + enter - wyświetlenie podpowiedzi do danego wiersza
+    alt+insert - generowanie np. konstruktora przez Intellij
+
 
 
     Komentarze:
@@ -32,9 +35,34 @@ public class InformacjeOgolne {
 
     Dziedziczenie to podstawowy mechanizm programowania obiektowego.
     Dzięki niemu możemy utworzyć hierarchię klas, która pozwoli nam na przekazanie pewnych cech klasy bazowej klasom potomnym.
-
     Najłatwiej dziedziczenie będzie przedstawić na przykładzie.
-    Person - będzie to klasa bazowa. MathTeacher i Footballer to klasy potomne.
+    Powiązane pojęcia, słowa kluczowe: super, this
+    Person - będzie to klasa bazowa. MathTeacher i Footballer to klasy potomne. W nich szerszy opis
+
+    Nadpisywanie metod (method overriding) - zmiana zachowania metody pomimo zachowania jej nazwy
+    przykład dostępny w klasie Person / Footballer
+
+    Przeciążąnie metod (method overloading) - posiadanie wewnątrz jednej klasy więcej niż jednej metody o tej samej nazwie
+    Jest to możliwe tylko w przypadku kiedy dana metoda ma inne parametry (inną ich liczbę lub innych ich typ) - patrz klasa MethodName
+
+    Paczka (package). Kiedy wraz ze wzrostem funkcjonalności projektowanego systemu / aplikacji rośnie też liczba klas,
+    konieczne jest rozdzielenie tych klas na logiczne grupy reprezentujące jeden konkretny obszar aplikacji.
+    Dodatkowo podział na takie grupy pozwoli nam na korzystanie z wielu różnych klas o tych samych nazwach.
+    W javie takie grupy nazwywamy paczkami (package).
+    Więcej o tworzeniu paczek i klas w ich obrębie w com.testeroprogramowania.app.info - klasa PackageInfo
+
+    Modyfikatory dostępu określają w jaki sposób inne obiekty mogą uzyskać dostęp do danej metody, pola klasy czy też interfejsu.
+    W Javie wyróżniamy cztery rodzaje modyfikatorów dostępu:
+    - public
+    - protected
+    - private
+    - oraz domyślny, default (nazywany również package - modyfikatorem paczki)
+    Więcej o modyfikatorach dostępu w paczce identifiers (first, klasa Parent)
+
+    Getter - metoda zwracająca wartość pola prywatnego. Więcej w klasie ReadOnly
+    Setter - metoda przypisująca wartość pola prywatnego. Więcej w klasie ReadOnly
+
+    Słowo kluczowe final nie pozwala zmienić wartości, która została przypisana do tej zmiennej (więcej w FinalTest)
 
     Src (source) – miejsce, folder, w którym trzymany jest kod źródłowy
 
@@ -51,6 +79,12 @@ public class InformacjeOgolne {
     Aby sprawdzić program w konkretnym miejscu, musimy dodać breakpoint; breakpoint to miejsce w którym program zostanie zatrzyamny
     Aby to zrobić najeżdżamy na odpowiednią linijkę kodu i klikamy obok numeru wiersza (miejsce to oznaczone zostanie czerwoną kropką a wiersz zostanie podświetlony)
     Następnie musimy uruchomić program, ale w odpowiednim trybie - w trybie debugowania (znaczek robaczka - w górnym panelu obok znaku play)
+
+    Interfejs jest to zestaw metod bez ich implementacji, czyli będziemy określali zwracany typ, nazwę metody, ale nie będziemy podawali ciała metody,
+    czyli całego kodu, który jest w środku.
+    Ciało metody będzie dostarczone przez klasy, które będą implementowały nasz interfejs.
+    Aby stworzyć nowy interfejs, klikamy prawym przyciskiem myszy na danym folderze lub paczce, wybieramy opcję New -> Java Class -> Interface
+    Przykłady: Interface Vehicle, Bike (klasa która będzie implementowała interfejs Vehicle za pomocą słowa kluczowego implements), Truck
 
 
 
