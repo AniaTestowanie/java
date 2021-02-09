@@ -86,7 +86,23 @@ public class InformacjeOgolne {
     Aby stworzyć nowy interfejs, klikamy prawym przyciskiem myszy na danym folderze lub paczce, wybieramy opcję New -> Java Class -> Interface
     Przykłady: Interface Vehicle, Bike (klasa która będzie implementowała interfejs Vehicle za pomocą słowa kluczowego implements), Truck
 
+    W polimorfiźmie mamy świadomość, że jak podamy typ klasy bazowej lub interfejsu to ten typ może mieć kilka postaci, tj.:
+    może to być każda z klas która rozszerza daną klasę lub każda z klas która implementuje interfejs.
+    Polimorfizm oparty na klasach i na interejscie (odpowiednio paczki document i docs)
 
+    Klasa abstrakcyjna jest pewnym uogólnieniem innych klas i jest to klasa która nie ma swoich reprezentantów w postaci obiektów,
+    czyli nie możemy stworzyć obiektu klasy abstrakcyjnej.
+    Klasa abstrakcyjna może zawierać metodę abstrakcyjną.
+    Metody abstrakcyjne to metody, które nie mają implementacji (tak jak w interfejsie), a implementacja musi zostać dostarczona w klasach,
+    które dziedziczą po naszej klasie abstrakcyjnej.
+    Poza metodami abstrakcyjnymi, klasa ta może zawierać stałe oznaczone słowami kluczowymi static final,
+    ale może też zawierać zwykłe metody które będą miały jakąś swoją implementację.
+
+    Aby stworzyć klasę abstrakcyjną, tworzymy nową klasę i w górnym wierszu dodajemy słowo kluczowe abstract.
+    Przykłady w paczce animals i klasie abstrakcyjnej Animal
+
+    Wyjątek to specjalna sytuacja, która może spowodować zatrzymanie wykonania naszego programu
+    Przykłady wyjątków znajdą się w klasie ExceptionsExample
 
     Nazewnictwo:
 
